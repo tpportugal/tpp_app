@@ -1,0 +1,124 @@
+:global .hidden {
+  display: none !important
+}
+
+:global .visible-xs,
+:global .visible-sm,
+:global .visible-md,
+:global .visible-lg {
+display: none !important;
+}
+:global .visible-xs-block,
+:global .visible-xs-inline,
+:global .visible-xs-inline-block,
+:global .visible-sm-block,
+:global .visible-sm-inline,
+:global .visible-sm-inline-block,
+:global .visible-md-block,
+:global .visible-md-inline,
+:global .visible-md-inline-block,
+:global .visible-lg-block,
+:global .visible-lg-inline,
+:global .visible-lg-inline-block {
+display: none !important;
+}
+@media (max-width: 767px) {
+:global .visible-xs {
+  display: block !important;
+}
+}
+@media (max-width: 767px) {
+:global .visible-xs-block {
+  display: block !important;
+}
+}
+@media (max-width: 767px) {
+:global .visible-xs-inline {
+  display: inline !important;
+}
+}
+@media (max-width: 767px) {
+:global .visible-xs-inline-block {
+  display: inline-block !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+:global .visible-sm {
+  display: block !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+:global .visible-sm-block {
+  display: block !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+:global .visible-sm-inline {
+  display: inline !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+:global .visible-sm-inline-block {
+  display: inline-block !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+:global .visible-md {
+  display: block !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+:global .visible-md-block {
+  display: block !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+:global .visible-md-inline {
+  display: inline !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+:global .visible-md-inline-block {
+  display: inline-block !important;
+}
+}
+@media (min-width: 1200px) {
+:global .visible-lg {
+  display: block !important;
+}
+}
+@media (min-width: 1200px) {
+:global .visible-lg-block {
+  display: block !important;
+}
+}
+@media (min-width: 1200px) {
+:global .visible-lg-inline {
+  display: inline !important;
+}
+}
+@media (min-width: 1200px) {
+:global .visible-lg-inline-block {
+  display: inline-block !important;
+}
+}
+@media (max-width: 767px) {
+:global .hidden-xs {
+  display: none !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+:global .hidden-sm {
+  display: none !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+:global .hidden-md {
+  display: none !important;
+}
+}
+@media (min-width: 1200px) {
+:global .hidden-lg {
+  display: none !important;
+}
+}

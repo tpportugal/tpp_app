@@ -1,0 +1,67 @@
+:root {
+  /*
+   * Typography
+   * ======================================================================== */
+
+  --font-family-base: "Fira Sans", sans-serif;
+
+  /*
+   * Colors
+   * ======================================================================== */
+
+   /*--motive: #f9433e;*/
+   --motive: #30bffb;
+   --motive-dark: #2e6fb7;
+   --red: #e74c3c;
+   --orange: #FF9009;
+   --green: #27ae60;
+   --gray-light: #f7f7f7;
+   --gray-dark: #738a94;
+   --gray: #aaa;
+   --black: #111111;
+   --facebook: #3b5998;
+   --twitter: #00aced;
+   --linkedin: #0077b5;
+   --googleplus: #d34836;
+   --pinterest: #C92228;
+
+  /*
+   * Layout
+   * ======================================================================== */
+
+  --max-content-width: 1200px;
+  --max-content-width-small: 840px;
+
+  /*
+   * Media queries breakpoints
+   * ======================================================================== */
+
+  --screen-xs-min: 480px;  /* Extra small screen / phone */
+  --screen-sm-min: 768px;  /* Small screen / tablet */
+  --screen-md-min: 992px;  /* Medium screen / desktop */
+  --screen-lg-min: 1200px; /* Large screen / wide desktop */
+
+  /*
+   * Borders
+   * ======================================================================== */
+
+   --border-color-light: #f7f7f7;
+   --border-color: #eee;
+   --border-radius-xs: 2px;
+   --border-radius-md: 3px;
+   --border-radius-lg: 4px;
+   --border-round: 50%;
+
+  /*
+   * Text
+   * ======================================================================== */
+
+   --gray-text: #aaaaaa;
+
+  /*
+   * Input
+   * ======================================================================== */
+
+   --placeholder: #aaaaaa;
+
+}

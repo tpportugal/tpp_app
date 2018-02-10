@@ -3,9 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.17.1",
+    "fastclick": "^1.0.6",
+    "qhistory": "^1.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "react-notification-system-redux": "^1.2.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-scripts": "1.1.0",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-form": "^7.2.3",
+    "redux-i18n": "^1.5.12",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0",
+    "redux-thunk": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,156 @@
+@import "./variables.css";
+
+:global .Select-menu-outer {
+  border-radius: 0 0 var(--border-radius-md) var(--border-radius-md);
+}
+
+label {
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, textarea {
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 12px 15px;
+  transition: border 0.2s ease;
+  &:focus {
+    border-color: var(--gray);
+  }
+}
+
+input, textarea, [contenteditable="true"] {
+  width: 100%;
+  display: block;
+  &:focus {
+    outline: none;
+  }
+}
+
+:global .checkbox,
+:global .radio {
+  position: relative;
+}
+:global .checkbox:after,
+:global .radio:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+:global .checkbox label,
+:global .radio label {
+  cursor: pointer;
+  font-weight: normal;
+  line-height: 20px;
+}
+:global .checkbox input[type="checkbox"],
+:global .radio input[type="radio"] {
+	position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+:global .checkbox input[type="checkbox"] + label:before,
+:global .radio input[type="radio"] + label:before {
+  content: "";
+	width: 20px;
+	height: 20px;
+	display: block;
+  float: left;
+	line-height: 20px;
+	font-size: 20px;
+  margin-right: 5px;
+	vertical-align: middle;
+	cursor: pointer;
+  border: 2px solid var(--border-color);
+}
+:global .checkbox input[type="checkbox"] + label:before {
+  border-radius: var(--border-radius-xs);
+}
+:global .radio input[type="radio"] + label:before {
+  border-radius: 50%;
+}
+
+:global .checkbox input[type="checkbox"]:checked + label:after,
+:global .radio input[type="radio"]:checked + label:after {
+	opacity: 1;
+}
+:global .checkbox input[type="checkbox"]:checked + label:before,
+:global .radio input[type="radio"]:checked + label:before {
+	border-color: var(--motive);
+}
+
+:global .checkbox label:after,
+:global .radio label:after {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+:global .checkbox label:after{
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIGZpbGw9IiNmYWxzZSIgPiAgICA8cGF0aCBzdHlsZT0idGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O2xpbmUtaGVpZ2h0Om5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2Jsb2NrLXByb2dyZXNzaW9uOnRiOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246Qml0c3RyZWFtIFZlcmEgU2FucyIgZD0iTSAyOC4yODEyNSA2LjI4MTI1IEwgMTEgMjMuNTYyNSBMIDMuNzE4NzUgMTYuMjgxMjUgTCAyLjI4MTI1IDE3LjcxODc1IEwgMTAuMjgxMjUgMjUuNzE4NzUgTCAxMSAyNi40MDYyNSBMIDExLjcxODc1IDI1LjcxODc1IEwgMjkuNzE4NzUgNy43MTg3NSBMIDI4LjI4MTI1IDYuMjgxMjUgeiIgY29sb3I9IiMwMDAiIG92ZXJmbG93PSJ2aXNpYmxlIiBmb250LWZhbWlseT0iQml0c3RyZWFtIFZlcmEgU2FucyI+PC9wYXRoPjwvc3ZnPg==") 50% 50% no-repeat;
+}
+:global .radio label:after {
+  background: var(--motive);
+  border-radius: 50%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: var(--placeholder);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: var(--placeholder);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: var(--placeholder);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: var(--placeholder);
+}
+
+:global .inputContainer {
+  margin-bottom: 15px;
+}
+:global .hasError input,
+:global .hasError select,
+:global .hasError textarea {
+  border-color: var(--red)
+}
+:global .inputError {
+  color: var(--red);
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+}
+
+:global .ql-editor {
+  min-height: 200px;
+}
+:global .ql-toolbar {
+  border: 2px solid var(--border-color) !important;
+  border-bottom: none !important;
+  border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+}
+:global .ql-container {
+  border: 2px solid var(--border-color) !important;
+  border-radius: 0 0 var(--border-radius-md) var(--border-radius-md);
+}
+
+:global .hasError :global .ql-toolbar {
+  border-color: var(--red) !important;
+}
+:global .hasError :global .ql-container {
+  border-color: var(--red) !important;
+}
