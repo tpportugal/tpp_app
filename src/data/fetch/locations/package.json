@@ -1,0 +1,6 @@
+{
+  "name": "locations-fetch",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./locations.js"
+}

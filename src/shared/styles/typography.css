@@ -1,0 +1,65 @@
+@import "./variables.css";
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,400i,500,700&subset=latin-ext");
+
+button, input, optgroup, select, textarea {
+  font-family: var(--font-family-base), sans-serif;
+}
+
+html, body {
+  font-size: 14px;
+  font-family: var(--font-family-base), sans-serif;
+}
+
+a {
+  transition: all 0.2s ease;
+  color: var(--motive);
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  color: inherit;
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.5em;
+  margin-top: 0;
+}
+
+ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 25px;
+}
+ol {
+  padding-left: 15px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  margin: 20px 0;
+}
+
+:global .h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+:global .h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+:global .h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+:global .text-center {
+  text-align: center;
+}
+:global .text-left {
+  text-align: left;
+}
+:global .text-right {
+  text-align: right;
+}
