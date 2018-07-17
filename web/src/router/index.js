@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Welcome from '@/components/Welcome'
+import PWelcome from '@/components/pages/PWelcome'
+import PRoutes from '@/components/pages/PRoutes'
 
 Vue.use(Router)
 
@@ -9,7 +10,12 @@ export default new Router({
     {
       path: '/',
       name: 'Welcome',
-      component: Welcome
+      component: PWelcome
+    },
+    {
+      path: '/routes',
+      name: 'Routes',
+      component: PRoutes
     }
   ]
 })
