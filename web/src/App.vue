@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import '~/../assets/scss/fonts.scss';
 #app {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;

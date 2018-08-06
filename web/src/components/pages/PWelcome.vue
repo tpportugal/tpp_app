@@ -3,19 +3,19 @@
     <ENavbar title="Olá!"></ENavbar>
     <!-- Big Option Menu -->
     <EMenuWrapper flex="true">
-      <div class="button" @click="$router.push('routes')">
+      <div class="button" @click="goRoute('routes')">
         <i class="fa fa-code-branch"></i>
         <div class="text-wrapper">
           <label>{{ labels.menu_wrapper.routes }}</label>
         </div>
       </div>
-      <div class="button" @click="$router.push('take-me-home')">
+      <div class="button" @click="goRoute('take-me-home')">
         <i class="fa fa-home"></i>
         <div class="text-wrapper">
           <label>{{ labels.menu_wrapper.take_me_home }}</label>
         </div>
       </div>
-      <div class="button" @click="$router.push('operators')">
+      <div class="button" @click="goRoute('operators')">
         <i class="fa fa-building"></i>
         <div class="text-wrapper">
           <label>{{ labels.menu_wrapper.operators }}</label>
@@ -53,6 +53,15 @@ export default {
           operators: 'Operadores'
         }
       }
+    }
+  },
+  methods: {
+    goRoute: function (routeName) {
+      if (routeName === 'take-me-home') {
+        alert('Ação indisponível')
+        return
+      }
+      this.$router.push(routeName)
     }
   }
 }
