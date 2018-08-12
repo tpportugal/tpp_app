@@ -34,7 +34,7 @@ nav {
     background-color: $bg-blue;
     color: #FFF;
     font-weight: lighter;
-    min-height: 45px;
+    height: 45px;
     display: flex;
     .menu {
         display: flex;
